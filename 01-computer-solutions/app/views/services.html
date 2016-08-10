@@ -4,19 +4,15 @@
   </div>
 </div>
 
-<div ng-controller="MainCtrl as company">
-
-  <div ng-repeat="service in company.details.services" class="row service-item">
-    <div class="large-2 columns">
-      <img ng-src="{{service.img}}">
-    </div>
-    <div class="large-10 columns">
-      <h4>{{service.name}}</h4>
-      <p>{{service.details}}</p>
-      <p>
-        <a href="#/contact" class="button">Contact Us</a>
-      </p>
-    </div>
+<div ng-repeat="service in company.details.services" class="row service-item">
+  <div class="large-2 columns">
+    <img ng-src="{{service.img}}">
   </div>
-
+  <div class="large-10 columns">
+    <h4>{{service.name}}</h4>
+    <p>{{service.details}}</p>
+    <p>
+      <a href="#/contact" class="button">Contact Us</a>
+    </p>
+  </div>
 </div>
