@@ -1,0 +1,19 @@
+<div ng-controller="MainCtrl as company">
+  
+  <div class="row hero">
+    <div class="large-10 large-push-1 columns">
+      <h2 class="text-center">{{company.details.name}}</h2>
+      <h5>{{company.details.heroText}}</h5>
+    </div>
+  </div>
+
+  <div class="row">
+    <div ng-repeat="service in company.details.services" class="large-4 columns">
+      <div class="callout">
+        <h3>{{service.name}}</h3>
+        <p>{{service.details}}</p>
+      </div>
+    </div>
+  </div>
+
+</div>
