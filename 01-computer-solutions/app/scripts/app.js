@@ -2,7 +2,7 @@
 
 (function() {
 
-  var app = angular.module('ComputerSolutionsApp', ['ngRoute']);
+  var app = angular.module('ComputerSolutionsApp', ['ngRoute', 'services', 'location']);
 
   app.config(function($routeProvider) {
     $routeProvider

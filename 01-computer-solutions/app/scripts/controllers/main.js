@@ -1,9 +1,10 @@
 'use strict';
 
 (function() {
+  
   var app = angular.module('ComputerSolutionsApp');
 
-  app.controller('MainCtrl', function () {
+  app.controller('MainCtrl', function() {
     this.details = {
       name: 'Computer Solutions',
       email: 'support@computer-solutions.fake',
